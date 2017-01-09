@@ -39,7 +39,8 @@ if [[ -t 1 && ! $COLOR = "NO" ]]; then
   ENDCOLOR='\e[0m' 
   S='\\'
 fi
-_WIDTH="$(stty size | cut -d ' ' -f 2)"
+#_WIDTH="$(stty size | cut -d ' ' -f 2)"
+_WIDTH=80
 
 trap ctrlc INT
 ctrlc() {
